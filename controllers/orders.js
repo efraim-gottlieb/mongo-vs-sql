@@ -66,5 +66,5 @@ export async function getOrderById(req, res) {
     res.status(404).json({ error: "not found" });
     return;
   }
-  res.json({ order: result });
+  res.status(201).json({ order: result });
 }
